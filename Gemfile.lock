@@ -20,7 +20,6 @@ GEM
     http_router (0.11.2)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
-    minitest (5.13.0)
     rack (2.0.8)
     rake (12.3.3)
     tilt (2.0.10)
@@ -33,7 +32,6 @@ PLATFORMS
 
 DEPENDENCIES
   hibana!
-  minitest (~> 5.0)
   rake (~> 12.0)
 
 BUNDLED WITH
