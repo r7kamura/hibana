@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["r7kamura"]
   spec.email         = ["r7kamura@gmail.com"]
 
-  spec.summary       = "A small strict web framework."
+  spec.summary       = "A small rack-based web framework."
   spec.homepage      = "https://github.com/r7kamura/hibana"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
