@@ -1,6 +1,6 @@
 # Hibana
 
-A small rack-based web framework.
+A small rack-based web application framework.
 
 ## Installation
 
