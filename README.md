@@ -20,7 +20,45 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Inherit `Hibana::Application` and run this class as a Rack application.
+
+The following is an example app using this gem at v0.1.0. See the source code for more information.
+
+```ruby
+require 'hibana'
+require 'rack/static'
+
+$LOAD_PATH.unshift('lib')
+require 'my_app/controllers/list_articles'
+require 'my_app/controllers/show_article'
+require 'my_app/controllers/show_articles_feed'
+require 'my_app/controllers/show_sitemap'
+require 'my_app/controllers/show_top_page'
+
+module MyApp
+  class Application < ::Hibana::Application
+    route do
+      get '/', to: ::MyApp::Controllers::ShowTopPage
+      get '/articles', to: ::MyApp::Controllers::ListArticles
+      get '/articles/:article_id', to: ::MyApp::Controllers::ShowArticle
+      get '/feed.xml', to: ::MyApp::Controllers::ShowArticlesFeed
+      get '/sitemap.txt', to: ::MyApp::Controllers::ShowSitemap
+    end
+
+    middleware.use(
+      ::Rack::Static,
+      root: 'static',
+      urls: %w[
+        /css
+        /favicon.ico
+        /images
+      ]
+    )
+  end
+end
+
+run MyApp::Application
+```
 
 ## Development
 
