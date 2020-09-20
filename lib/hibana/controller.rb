@@ -1,5 +1,4 @@
-require 'rack/request'
-require 'rack/response'
+require 'rack'
 
 module Hibana
   class Controller

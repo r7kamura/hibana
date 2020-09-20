@@ -1,5 +1,5 @@
 require 'hanami/router'
-require 'rack/builder'
+require 'rack'
 
 module Hibana
   class Application
