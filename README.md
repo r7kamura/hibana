@@ -1,5 +1,7 @@
 # Hibana
 
+[![](https://badge.fury.io/rb/hibana.svg)](https://rubygems.org/gems/hibana)
+
 A small rack-based web application framework.
 
 ## Installation
