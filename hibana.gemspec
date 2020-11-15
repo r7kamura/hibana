@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency 'hanami-router'
+  spec.add_runtime_dependency 'hanami-router', '>= 2.0.0.alpha3'
   spec.add_runtime_dependency 'rack'
   spec.add_runtime_dependency 'tilt'
 end
