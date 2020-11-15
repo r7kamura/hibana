@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    hibana (0.1.1)
+    hibana (0.2.0)
       hanami-router (>= 2.0.0.alpha3)
       rack
       tilt
