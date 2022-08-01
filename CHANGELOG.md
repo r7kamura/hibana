@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 0.2.1 - 2022-08-02
+
 ### Changed
 
 - Require hanami-router 2.0.0.alpha3 (because beta1 requires Ruby 3).
